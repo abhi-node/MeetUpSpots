@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from meetup.views import homeView
+from meetup.views import homeView, meetView
 
 urlpatterns = [
     path('admin/', admin.site.urls),    
     path('', homeView),
+    path('meetup/', meetView)
 
 ]

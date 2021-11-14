@@ -5,4 +5,6 @@ first_time = True
 
 # Create your views here.
 def homeView(request):
-  HttpResponse('Hello, this is homeView')
+  return render(request, "index.html")
+def meetView(request):
+  return render(request, "meetup.html")
